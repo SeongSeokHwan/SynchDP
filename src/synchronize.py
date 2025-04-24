@@ -411,6 +411,8 @@ class Denovo:
             df_1 = self.query_dict[node1]
             df_2 = self.query_dict[node2]
             synch = synchDP(df_1, df_2, self.params.penalty, self.params.pcut, self.params.window, self.params.ecut)
+            if len(synch.results) == 0:
+                continue
             coordinates = synch.results[0][2]
 
             x_list = [x-1 for x, y in coordinates]
@@ -598,7 +600,7 @@ class Denovo:
                 continue
 
             result = item[0]
-            score1, score2, path = result
+            score1, score2, path, avg_diff = result
             path = [[x-1, y-1] for x, y in path]
 
             y_1 = self.query_dict[key].iloc[0].to_list()
