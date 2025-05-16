@@ -14,7 +14,7 @@ This algorithm was originally developed for aligning disease progression pattern
 - Network construction and clustering tools (e.g., Louvain clustering)
 - Tutorial codes for full pipeline usage
 
-![workflow](https://github.com/SeongSeokHwan/SynchDP/blob/main/Figures/fig1_method.pdf)
+![workflow](https://github.com/SeongSeokHwan/SynchDP/blob/main/images/SynchDP_Metheod.png)
 
 
 ---
